@@ -1,4 +1,4 @@
-# 📸 Wedding Art Website
+# 📸 The Wedding Art Website
 
 This is a responsive and modern front-end website built for a wedding photography business to showcase their services and portfolio.
 
