@@ -50,48 +50,52 @@ background:white;
 
 
 /* HOME GALLERY */
+/* ========================= */
+/* HOME GALLERY PREVIEW */
+/* ========================= */
 
-.our-work-section{
+.home-gallery{
 
-padding:60px 20px;
-background:white;
+padding:80px 50px;
+background:#000;
+
+}
+
+.home-gallery h2{
+
 text-align:center;
+font-size:38px;
+margin-bottom:40px;
+color:#ffcc00;
 
 }
 
-.our-work-heading{
-
-font-size:32px;
-margin-bottom:30px;
-color:#7f5af0;
-
-}
-
-.gallery{
+.home-gallery-grid{
 
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-padding:20px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
 
 }
 
-.gallery img{
+.home-gallery-grid img{
 
 width:100%;
-height:320px;
+height:350px;
 object-fit:cover;
 border-radius:12px;
-transition:.4s;
-box-shadow:0 8px 20px rgba(0,0,0,.15);
+transition:0.4s ease;
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
 
 }
 
-.gallery img:hover{
+.home-gallery-grid img:hover{
 
-transform:scale(1.05);
+transform:scale(1.06);
+box-shadow:0 15px 35px rgba(255,204,0,0.4);
 
 }
+
 
 
 /* CONTACT */
