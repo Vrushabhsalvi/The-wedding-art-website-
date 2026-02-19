@@ -1,7 +1,3 @@
-/* ========================= */
-/* GLOBAL */
-/* ========================= */
-
 *{
 margin:0;
 padding:0;
@@ -10,34 +6,24 @@ scroll-behavior:smooth;
 }
 
 body{
-
 font-family: 'Poppins', sans-serif;
 background:#000;
 color:#fff;
-
 }
 
 a{
-
 text-decoration:none;
 color:white;
-
 }
 
 img{
-
 max-width:100%;
 display:block;
-
 }
 
-
-/* ========================= */
 /* NAVBAR */
-/* ========================= */
 
 .navbar{
-
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -46,69 +32,51 @@ background:black;
 position:sticky;
 top:0;
 z-index:1000;
-
 }
 
 .logo{
-
 font-size:24px;
 font-weight:bold;
 color:#ffcc00;
-
 }
 
 .nav-links{
-
 display:flex;
 gap:30px;
-
 }
 
 .nav-links a{
-
 font-size:16px;
 transition:.3s;
-
 }
 
 .nav-links a:hover{
-
 color:#ffcc00;
-
 }
 
-
-/* ========================= */
 /* HOME SECTION */
-/* ========================= */
+
 
 .home{
-
 height:100vh;
 background:url('../images/bg.jpg') center/cover no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
-
 }
 
 .home-content h1{
-
 font-size:50px;
 margin-bottom:20px;
-
 }
 
 .home-content p{
-
 font-size:20px;
 margin-bottom:30px;
-
 }
 
 .btn{
-
 display:inline-block;
 padding:12px 30px;
 background:#ffcc00;
@@ -116,260 +84,194 @@ color:black;
 border-radius:5px;
 font-weight:bold;
 transition:.3s;
-
 }
 
 .btn:hover{
-
 background:white;
-
 }
 
-
-/* ========================= */
 /* ABOUT */
-/* ========================= */
 
 .about{
-
 padding:80px 50px;
 text-align:center;
-
 }
 
 .about h2{
-
 font-size:40px;
 margin-bottom:20px;
-
 }
 
 .about p{
-
 max-width:800px;
 margin:auto;
 line-height:1.7;
-
 }
 
-
-/* ========================= */
 /* GALLERY */
-/* ========================= */
 
 .gallery{
-
 padding:80px 50px;
-
 }
 
 .gallery h2{
-
 text-align:center;
 font-size:40px;
 margin-bottom:40px;
-
 }
 
 .gallery-grid{
-
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
-
 }
 
 .gallery-grid img{
-
 height:300px;
 object-fit:cover;
 border-radius:10px;
 transition:.4s;
-
 }
 
 .gallery-grid img:hover{
-
 transform:scale(1.05);
-
 }
 
-
-/* ========================= */
 /* PACKAGES */
-/* ========================= */
-
 .packages{
-
 padding:80px 50px;
-
 }
 
 .package-container{
-
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:30px;
-
 }
 
 .package{
-
 background:#111;
 padding:30px;
 border-radius:10px;
 text-align:center;
 transition:.3s;
-
 }
 
 .package:hover{
-
 transform:translateY(-10px);
-
 }
 
 .package h3{
-
 margin-bottom:15px;
 color:#ffcc00;
-
 }
 
 .package p{
-
 margin-bottom:20px;
-
 }
 
-
-/* ========================= */
 /* CONTACT */
-/* ========================= */
 
 .contact{
+padding:80px 20px;
+background:#000;
+animation:none;
+}
 
-padding:80px 50px;
-text-align:center;
-
+.contact h2{
+font-size:36px;
+margin-bottom:20px;
+color:#ffcc00;
 }
 
 .contact form{
-
 max-width:500px;
 margin:auto;
-
+background:#111;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.5);
 }
 
 .contact input,
 .contact textarea{
-
 width:100%;
 padding:12px;
 margin-bottom:15px;
 border:none;
 border-radius:5px;
+background:#222;
+color:white;
+}
 
+.contact input:focus,
+.contact textarea:focus{
+outline:none;
+border:1px solid #ffcc00;
 }
 
 .contact button{
-
 width:100%;
 padding:12px;
 border:none;
 background:#ffcc00;
 color:black;
 font-weight:bold;
+border-radius:5px;
 cursor:pointer;
-
+transition:0.3s;
 }
 
 .contact button:hover{
-
 background:white;
-
 }
 
-
-/* ========================= */
 /* PAYMENT */
-/* ========================= */
 
 .payment{
-
 padding:80px;
 text-align:center;
-
 }
 
 .payment img{
-
 width:300px;
 margin:auto;
-
 }
 
-
-/* ========================= */
 /* FOOTER */
-/* ========================= */
 
 footer{
-
 background:#111;
 padding:20px;
 text-align:center;
 margin-top:50px;
-
 }
 
-
-/* ========================= */
 /* ANIMATION */
-/* ========================= */
 
 .fade-in{
-
 opacity:0;
 transform:translateY(30px);
 animation:fadeIn 1s forwards;
-
 }
 
 @keyframes fadeIn{
-
 to{
-
 opacity:1;
 transform:translateY(0);
-
+}
 }
 
-}
-
-
-/* ========================= */
 /* RESPONSIVE */
-/* ========================= */
 
 @media(max-width:768px){
-
 .navbar{
-
 flex-direction:column;
-
 }
-
 .home-content h1{
-
 font-size:30px;
-
 }
 
 .gallery-grid img{
-
 height:200px;
-
 }
-
 }
