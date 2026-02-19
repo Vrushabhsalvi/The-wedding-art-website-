@@ -109,32 +109,50 @@ line-height:1.7;
 }
 
 /* GALLERY */
+/* ========================= */
+/* HOME GALLERY PREVIEW */
+/* ========================= */
 
-.gallery{
+.home-gallery{
+
 padding:80px 50px;
+background:#000;
+
 }
 
-.gallery h2{
+.home-gallery h2{
+
 text-align:center;
-font-size:40px;
+font-size:38px;
 margin-bottom:40px;
+color:#ffcc00;
+
 }
 
-.gallery-grid{
+.home-gallery-grid{
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+
 }
 
-.gallery-grid img{
-height:300px;
+.home-gallery-grid img{
+
+width:100%;
+height:350px;
 object-fit:cover;
-border-radius:10px;
-transition:.4s;
+border-radius:12px;
+transition:0.4s ease;
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
+
 }
 
-.gallery-grid img:hover{
-transform:scale(1.05);
+.home-gallery-grid img:hover{
+
+transform:scale(1.06);
+box-shadow:0 15px 35px rgba(255,204,0,0.4);
+
 }
 
 /* PACKAGES */
