@@ -1,353 +1,170 @@
 /* =========================
 GLOBAL RESET
 ========================= */
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-
-font-family: 'Segoe UI', sans-serif;
-line-height:1.6;
-color:#333;
-background:#fff;
-
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
 }
-
-
 
 /* =========================
 NAVBAR
 ========================= */
-
-.navbar-brand{
-
-font-size:22px;
-font-weight:700;
-
+.navbar-brand {
+  font-size: 22px;
+  font-weight: 700;
 }
 
-.navbar-nav .nav-link{
-
-font-size:16px;
-margin-left:15px;
-transition:0.3s;
-
+.navbar-nav .nav-link {
+  font-size: 16px;
+  margin-left: 15px;
+  transition: 0.3s;
 }
 
-.navbar-nav .nav-link:hover{
-
-color:#0d6efd;
-
+.navbar-nav .nav-link:hover {
+  color: #0d6efd;
 }
-
-
 
 /* =========================
 HERO SECTION
 ========================= */
-
-.hero-section{
-
-background:
-
-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-
-url("https://i.postimg.cc/HLJd0RVc/IMG-20250501-WA0001.jpg");
-
-background-size:cover;
-background-position:center;
-
-color:white;
-
-padding:120px 20px;
-
-text-align:center;
-
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("https://i.postimg.cc/HLJd0RVc/IMG-20250501-WA0001.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
 }
 
-
-
-.hero-title{
-
-font-size:48px;
-font-weight:bold;
-
+.hero-title {
+  font-size: 48px;
+  font-weight: bold;
 }
 
-
-
-.hero-subtitle{
-
-font-size:20px;
-margin-top:20px;
-margin-bottom:30px;
-
-max-width:700px;
-margin-left:auto;
-margin-right:auto;
-
+.hero-subtitle {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-
 
 /* =========================
 BUTTON
 ========================= */
-
-.btn{
-
-padding:12px 25px;
-font-size:16px;
-border-radius:5px;
-
+.btn {
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 5px;
 }
-
-
 
 /* =========================
 SECTIONS
 ========================= */
-
-section{
-
-padding-top:60px;
-padding-bottom:60px;
-
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-
-
-h2{
-
-font-weight:bold;
-margin-bottom:20px;
-
+h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
 }
-
-
 
 /* =========================
 IMAGE RESPONSIVE
 ========================= */
-
-img{
-
-max-width:100%;
-height:auto;
-
+img {
+  max-width: 100%;
+  height: auto;
 }
-
-
 
 /* =========================
 GALLERY GRID
 ========================= */
-
-.gallery{
-
-display:grid;
-
-grid-template-columns:
-
-repeat(auto-fit, minmax(250px, 1fr));
-
-gap:20px;
-
-padding:10px;
-
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 10px;
 }
 
-
-
-.gallery img{
-
-width:100%;
-
-height:280px;
-
-object-fit:cover;
-
-border-radius:8px;
-
-transition:0.4s;
-
-cursor:pointer;
-
+.gallery img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: 0.4s;
+  cursor: pointer;
 }
 
-
-
-.gallery img:hover{
-
-transform:scale(1.05);
-
+.gallery img:hover {
+  transform: scale(1.05);
 }
-
-
 
 /* =========================
 SERVICE BOX SPACING
 ========================= */
-
-.col-md-4{
-
-margin-bottom:30px;
-
+.col-md-4 {
+  margin-bottom: 30px;
 }
-
-
 
 /* =========================
 FOOTER
 ========================= */
-
-footer{
-
-margin-top:40px;
-
+footer {
+  margin-top: 40px;
 }
-
-
 
 /* =========================
-TABLET RESPONSIVE
+INSTAGRAM SECTION
 ========================= */
-
-@media(max-width:992px){
-
-.hero-title{
-
-font-size:36px;
-
-}
-
-.hero-subtitle{
-
-font-size:18px;
-
-}
-
-}
-
-
-
-/* =========================
-MOBILE RESPONSIVE
-========================= */
-
-@media(max-width:768px){
-
-
-
-.hero-section{
-
-padding:80px 15px;
-
-}
-
-
-
-.hero-title{
-
-font-size:28px;
-
-}
-
-
-
-.hero-subtitle{
-
-font-size:16px;
-
-}
-
-
-
-.navbar-nav{
-
-text-align:center;
-
-}
-
-
-
-.btn{
-
-margin-top:10px;
-
-width:100%;
-
-}
-
-
-
-.gallery img{
-
-height:220px;
-
-}
-
-
-
-section{
-
-padding-top:40px;
-padding-bottom:40px;
-
-}
-
-
-
-}
-
-
-
-/* =========================
-SMALL MOBILE
-========================= */
-
-@media(max-width:480px){
-
-.hero-title{
-
-font-size:24px;
-
-}
-
-
-
-.hero-subtitle{
-
-font-size:15px;
-
-}
-
-
-
-.gallery{
-
-grid-template-columns:1fr;
-
-}
-
-
-
-}
-
-<style>
 .instagram-container {
   max-width: 1200px;
-  margin: 0 auto; /* center container */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .instagram-item {
-  flex: 1 1 350px; /* responsive width */
+  flex: 1 1 350px;
   max-width: 350px;
   display: flex;
-  justify-content: center; /* center each embed */
+  justify-content: center;
 }
-</style>
+
+/* =========================
+RESPONSIVE
+========================= */
+@media(max-width:992px){
+  .hero-title{ font-size:36px; }
+  .hero-subtitle{ font-size:18px; }
+}
+
+@media(max-width:768px){
+  .hero-section{ padding:80px 15px; }
+  .hero-title{ font-size:28px; }
+  .hero-subtitle{ font-size:16px; }
+  .navbar-nav{ text-align:center; }
+  .btn{ margin-top:10px; width:100%; }
+  .gallery img{ height:220px; }
+  section{ padding-top:40px; padding-bottom:40px; }
+}
+
+@media(max-width:480px){
+  .hero-title{ font-size:24px; }
+  .hero-subtitle{ font-size:15px; }
+  .gallery{ grid-template-columns:1fr; }
+}

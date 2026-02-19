@@ -95,8 +95,8 @@
         <h3><?= $pkg['title'] ?></h3>
         <p><strong>Price:</strong> <?= $pkg['price'] ?></p>
         <p><?= $pkg['description'] ?></p>
-        <button class="btn" onclick="showForm(<?= $pkg['id'] ?>)">Enquire Now</button>
-        <button class="btn" onclick="showReviewForm(<?= $pkg['id'] ?>)">Write a Review</button>
+        <button class="btn" onclick="showForm(<?= $pkg['id'] ?>)">Enquire Now</button>.
+        <button class="btn" onclick="showReviewForm(<?= $pkg['id'] ?>)">Write a Review</button>.
 
         <div id="form-<?= $pkg['id'] ?>" class="inquiry-form">
           <form action="submit_inquiry.php" method="POST">
