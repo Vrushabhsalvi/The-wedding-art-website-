@@ -1,151 +1,339 @@
-:root {
+/* =========================
+GLOBAL RESET
+========================= */
 
---primary:#7f5af0;
---accent:#ff8906;
---light:#f8f9fa;
---dark:#2c2c54;
-
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
 
-font-family:'Segoe UI',sans-serif;
-background:#f8f9fa;
-color:#2c2c54;
+font-family: 'Segoe UI', sans-serif;
+line-height:1.6;
+color:#333;
+background:#fff;
 
 }
 
-/* NAVBAR */
+
+
+/* =========================
+NAVBAR
+========================= */
 
 .navbar-brand{
 
+font-size:22px;
+font-weight:700;
+
+}
+
+.navbar-nav .nav-link{
+
+font-size:16px;
+margin-left:15px;
+transition:0.3s;
+
+}
+
+.navbar-nav .nav-link:hover{
+
+color:#0d6efd;
+
+}
+
+
+
+/* =========================
+HERO SECTION
+========================= */
+
+.hero-section{
+
+background:
+
+linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+
+url("https://i.postimg.cc/HLJd0RVc/IMG-20250501-WA0001.jpg");
+
+background-size:cover;
+background-position:center;
+
+color:white;
+
+padding:120px 20px;
+
+text-align:center;
+
+}
+
+
+
+.hero-title{
+
+font-size:48px;
 font-weight:bold;
-font-size:24px;
-color:#7f5af0 !important;
-
-}
-
-.nav-link{
-
-font-weight:500;
-
-}
-
-.nav-link:hover{
-
-color:#ff8906 !important;
 
 }
 
 
-/* HERO */
 
-.hero{
+.hero-subtitle{
 
-padding:80px 20px;
-text-align:center;
-background:white;
+font-size:20px;
+margin-top:20px;
+margin-bottom:30px;
+
+max-width:700px;
+margin-left:auto;
+margin-right:auto;
+
+}
+
+
+
+/* =========================
+BUTTON
+========================= */
+
+.btn{
+
+padding:12px 25px;
+font-size:16px;
+border-radius:5px;
 
 }
 
 
-/* HOME GALLERY */
-/* ========================= */
-/* HOME GALLERY PREVIEW */
-/* ========================= */
 
-.home-gallery{
+/* =========================
+SECTIONS
+========================= */
 
-padding:80px 50px;
-background:#000;
+section{
 
-}
-
-.home-gallery h2{
-
-text-align:center;
-font-size:38px;
-margin-bottom:40px;
-color:#ffcc00;
+padding-top:60px;
+padding-bottom:60px;
 
 }
 
-.home-gallery-grid{
+
+
+h2{
+
+font-weight:bold;
+margin-bottom:20px;
+
+}
+
+
+
+/* =========================
+IMAGE RESPONSIVE
+========================= */
+
+img{
+
+max-width:100%;
+height:auto;
+
+}
+
+
+
+/* =========================
+GALLERY GRID
+========================= */
+
+.gallery{
 
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
+
+grid-template-columns:
+
+repeat(auto-fit, minmax(250px, 1fr));
+
+gap:20px;
+
+padding:10px;
 
 }
 
-.home-gallery-grid img{
+
+
+.gallery img{
 
 width:100%;
-height:350px;
+
+height:280px;
+
 object-fit:cover;
-border-radius:12px;
-transition:0.4s ease;
-box-shadow:0 10px 25px rgba(0,0,0,0.6);
 
-}
+border-radius:8px;
 
-.home-gallery-grid img:hover{
+transition:0.4s;
 
-transform:scale(1.06);
-box-shadow:0 15px 35px rgba(255,204,0,0.4);
+cursor:pointer;
 
 }
 
 
 
-/* CONTACT */
+.gallery img:hover{
 
-.contact-section{
-
-background:white;
-
-}
-
-form{
-
-background:white;
-padding:30px;
-border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,.1);
+transform:scale(1.05);
 
 }
 
 
-/* PAYMENT */
 
-.qr-code{
+/* =========================
+SERVICE BOX SPACING
+========================= */
 
-width:300px;
-border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,.2);
+.col-md-4{
+
+margin-bottom:30px;
 
 }
 
 
-/* FOOTER */
+
+/* =========================
+FOOTER
+========================= */
 
 footer{
 
-background:#343a40;
-color:white;
-padding:20px;
+margin-top:40px;
 
 }
 
 
-/* RESPONSIVE */
+
+/* =========================
+TABLET RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+.hero-title{
+
+font-size:36px;
+
+}
+
+.hero-subtitle{
+
+font-size:18px;
+
+}
+
+}
+
+
+
+/* =========================
+MOBILE RESPONSIVE
+========================= */
 
 @media(max-width:768px){
+
+
+
+.hero-section{
+
+padding:80px 15px;
+
+}
+
+
+
+.hero-title{
+
+font-size:28px;
+
+}
+
+
+
+.hero-subtitle{
+
+font-size:16px;
+
+}
+
+
+
+.navbar-nav{
+
+text-align:center;
+
+}
+
+
+
+.btn{
+
+margin-top:10px;
+
+width:100%;
+
+}
+
+
 
 .gallery img{
 
 height:220px;
 
 }
+
+
+
+section{
+
+padding-top:40px;
+padding-bottom:40px;
+
+}
+
+
+
+}
+
+
+
+/* =========================
+SMALL MOBILE
+========================= */
+
+@media(max-width:480px){
+
+.hero-title{
+
+font-size:24px;
+
+}
+
+
+
+.hero-subtitle{
+
+font-size:15px;
+
+}
+
+
+
+.gallery{
+
+grid-template-columns:1fr;
+
+}
+
+
 
 }
