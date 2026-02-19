@@ -337,3 +337,17 @@ grid-template-columns:1fr;
 
 
 }
+
+<style>
+.instagram-container {
+  max-width: 1200px;
+  margin: 0 auto; /* center container */
+}
+
+.instagram-item {
+  flex: 1 1 350px; /* responsive width */
+  max-width: 350px;
+  display: flex;
+  justify-content: center; /* center each embed */
+}
+</style>
