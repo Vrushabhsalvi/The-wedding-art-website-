@@ -173,7 +173,7 @@ margin-bottom:20px;
 
 .contact{
 padding:80px 20px;
-background:#000;
+background:#ffffff;
 animation:none;
 }
 
@@ -186,7 +186,7 @@ color:#ffcc00;
 .contact form{
 max-width:500px;
 margin:auto;
-background:#111;
+background:#ffffff;
 padding:30px;
 border-radius:10px;
 box-shadow:0 5px 20px rgba(0,0,0,0.5);
@@ -199,7 +199,7 @@ padding:12px;
 margin-bottom:15px;
 border:none;
 border-radius:5px;
-background:#222;
+background:#ffffff;
 color:white;
 }
 
