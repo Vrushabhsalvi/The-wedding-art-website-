@@ -6,50 +6,135 @@
   <title>Make Payment | The Wedding Art</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
+    body {
+      background-color: #f8f9fa;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: #2E7D32;
+    }
+    .navbar-nav .nav-link {
+      margin-left: 15px;
+      transition: color 0.3s ease;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #27662a;
+    }
+
+    /* QR Section */
     .qr-code-container {
       text-align: center;
-      margin-top: 50px;
+      margin: 80px auto 50px auto;
+      padding: 40px 20px;
+      max-width: 420px;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .qr-code {
-      max-width: 300px;
+    .qr-code-container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .qr-code-container h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #2E7D32;
+    }
+
+    .qr-code-container img {
+      max-width: 100%;
       height: auto;
+      border-radius: 10px;
       border: 2px solid #ccc;
       padding: 10px;
-      border-radius: 10px;
       background-color: #f9f9f9;
+      margin-bottom: 20px;
     }
+
+    .qr-code-container p {
+      font-size: 1rem;
+      color: #495057;
+      margin-bottom: 25px;
+    }
+
+    .download-btn {
+      background-color: #2E7D32;
+      color: #fff;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 8px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.3s ease;
+      display: inline-block;
+    }
+
+    .download-btn:hover {
+      background-color: #27662a;
+      transform: scale(1.05);
+    }
+
+    /* Footer */
     footer {
-      margin-top: 50px;
+      margin-top: auto;
+      background-color: #343a40;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    /* Responsive adjustments */
+    @media(max-width: 480px){
+      .qr-code-container {
+        margin: 50px 15px;
+        padding: 30px 15px;
+      }
+      .download-btn {
+        width: 100%;
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="#">The Wedding Art</a>
-      <div>
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.php">Gallery</a></li>
-            <li class="nav-item"><a class="nav-link" href="packages.php">Packages</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+      <a class="navbar-brand" href="index.html">The Wedding Art</a>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.php">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="packages.php">Packages</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
     </div>
   </nav>
 
   <!-- QR Code Section -->
   <div class="container qr-code-container">
     <h2>Scan & Pay</h2>
-<img src='https://i.postimg.cc/853r0Xt8/IMG-20250430-WA0001.jpg' border='0' alt='IMG-20250430-WA0001'/>
-<p>Click or scan the QR to pay via any UPI app</p>
+    <img src="IMG-20250430-WA0001-payment.jpg" alt="Payment QR Code" />
+    <p>Scan this QR code using any UPI app (Google Pay, PhonePe, Paytm, BHIM) to make your payment securely.</p>
+    <a href="IMG-20250430-WA0001-payment.jpg" download="TheWeddingArt_QR.jpg" class="download-btn">Download QR Code</a>
   </div>
 
   <!-- Footer -->
-  <footer class="text-center p-3 bg-dark text-white">
+  <footer>
     © 2025 The Wedding Art Photography
   </footer>
 
