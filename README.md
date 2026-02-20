@@ -52,9 +52,8 @@ The-wedding-art-website-/
 
 ## 📸 Screenshots
 
-*(Optional: Add screenshots here later to improve recruiter engagement)*
+![Screenshot_20-2-2026_20434_vrushabhsalvi github io](https://github.com/user-attachments/assets/7fd6879d-70ba-43f0-84b2-160044c58448)
 
-Example:
 
 ---
 
