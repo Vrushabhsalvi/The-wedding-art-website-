@@ -6,12 +6,8 @@
   <title>About Us | The Wedding Art</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
   <style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-      background-color: #f8f9fa;
-    }
-
     .about-heading {
       font-family: 'Playfair Display', serif;
       font-size: 3rem;
@@ -30,7 +26,7 @@
     }
 
     .about-text {
-      max-width: 800px;
+      max-width: 850px;
       margin: 20px auto;
       font-size: 1.1rem;
       line-height: 1.8;
@@ -38,52 +34,131 @@
       color: #495057;
     }
 
+    .founder-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: #2E7D32;
+      display: block;
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    .section-subtitle {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #343a40;
+      text-align: center;
+    }
+
+    .mission, .vision {
+      max-width: 800px;
+      margin: 20px auto;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .service-card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 20px;
+      flex: 1 1 250px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .service-card h4 {
+      color: #2E7D32;
+      margin-bottom: 15px;
+    }
+
     footer {
       margin-top: 50px;
+      background-color: #343a40;
+      color: #fff;
     }
-    .founder-name {
-  font-family: 'Playfair Display', serif; /* You can choose any stylish Google Font */
-  font-size: 20px;
-  font-weight: 600;
-  color: #2E7D32;
-  display: inline-block;
-  margin-top: 10px;
-}
-
   </style>
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">The Wedding Art</a>
-      <div>
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="/admin/login.php">Login</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.php">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="packages.php">Packages</a></li>
-          <li class="nav-item"><a class="nav-link" href="payment.html">Payment</a></li>
-        </ul>
-      </div>
+      <a class="navbar-brand fw-bold" href="index.html">The Wedding Art</a>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="payment.html">Payment</a></li>
+      </ul>
     </div>
   </nav>
 
-  <!-- About Section -->
+  <!-- ABOUT US -->
   <div class="container text-center">
     <h1 class="about-heading">About Us</h1>
     <img src="https://i.postimg.cc/Zqh1yNDv/IMG-20250501-WA0006.jpg" alt="Wedding Studio" class="about-image">
+
     <p class="about-text">
-      At The Wedding Art, we don’t just click photos—we tell stories. With years of expertise in capturing the essence of love, joy, and celebration, we specialize in creating timeless memories. Our lens sees more than just moments—it sees emotions. Whether it’s a grand wedding, an intimate ceremony, or a candid pre-wedding shoot, we deliver artistry in every frame. Our commitment is to blend elegance with creativity, capturing each chapter of your love story in the most magical way possible.
-     <br><br>
-  <span class="founder-name"><strong>FOUNDER SHUBHAM CHANDIWADE</strong></span>
+      At <strong>The Wedding Art</strong>, we don’t just capture photos—we tell stories. With years of experience in capturing love, joy, and celebration, we specialize in creating timeless memories. Our lens captures more than moments—it captures emotions. From grand weddings to intimate ceremonies and candid pre-wedding shoots, we deliver artistry in every frame. Our commitment is to blend elegance with creativity, turning every chapter of your love story into magic.
     </p>
+
+    <!-- MISSION & VISION -->
+    <h2 class="section-subtitle">Our Mission</h2>
+    <p class="mission">
+      To craft cinematic and emotionally-driven wedding photography that preserves the essence of every couple's love story.
+    </p>
+
+    <h2 class="section-subtitle">Our Vision</h2>
+    <p class="vision">
+      To become the most trusted and innovative wedding photography studio in Mumbai, delivering unforgettable memories with elegance and creativity.
+    </p>
+
+    <!-- SERVICES HIGHLIGHT -->
+    <h2 class="section-subtitle">Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h4>Candid Photography</h4>
+        <p>Genuine moments, natural expressions, and memories that last a lifetime.</p>
+      </div>
+      <div class="service-card">
+        <h4>Cinematic Films</h4>
+        <p>Wedding stories captured in cinematic quality with professional editing.</p>
+      </div>
+      <div class="service-card">
+        <h4>Pre & Post Wedding Shoots</h4>
+        <p>Beautifully crafted sessions to celebrate your love journey before and after the wedding.</p>
+      </div>
+      <div class="service-card">
+        <h4>Luxury Albums</h4>
+        <p>Handcrafted albums designed to preserve your wedding memories elegantly.</p>
+      </div>
+    </div>
+
+    <!-- FOUNDER -->
+    <p class="founder-name">Founder: Shubham Chandiwade</p>
   </div>
 
-  <!-- Footer -->
-  <footer class="text-center p-3 bg-dark text-white">
+  <!-- FOOTER -->
+  <footer class="text-center p-4">
     © 2025 The Wedding Art Photography
   </footer>
 
