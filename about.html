@@ -61,6 +61,81 @@
       line-height: 1.7;
       color: #495057;
     }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .service-card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 20px;
+      flex: 1 1 250px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .service-card h4 {
+      color: #2E7D32;
+      margin-bottom: 15px;
+    }
+
+    .testimonial {
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .testimonial p {
+      font-style: italic;
+    }
+
+    .testimonial h5 {
+      margin-top: 10px;
+      color: #2E7D32;
+    }
+
+    .team-member {
+      text-align: center;
+      margin: 15px;
+    }
+
+    .team-member img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .team-member h5 {
+      color: #2E7D32;
+      margin-top: 10px;
+    }
+
+    .team-member p {
+      font-size: 0.9rem;
+      color: #495057;
+    }
+footer {
+      margin-top: 50px;
+      background-color: #343a40;
+      color: #fff;
+    }
+    
   </style>
 </head>
 <body>
@@ -133,10 +208,6 @@
       </div>
     </div>
 
-    <!-- Founder -->
-    <p class="founder-name">Founder: Shubham Chandiwade</p>
-
-
     <!-- TEAM HIGHLIGHT -->
     <h2 class="section-subtitle">Meet Our Team</h2>
     <div class="d-flex flex-wrap justify-content-center gap-4">
@@ -175,6 +246,8 @@
     </div>
 
   </div>
+  <!-- Founder -->
+    <p class="founder-name">Founder: Shubham Chandiwade</p>
 
   </div>
 
